@@ -2,7 +2,7 @@ import random
 import time
 import sortSearch
 
-print(sortSearch.Sort.bubble())
+print(sortSearch.Sort.bubble([5,4,7,10,2]))
 # chatbot, class which contains some functions and holds information in attributes
 class Chatbot():
     # initialize our class object
