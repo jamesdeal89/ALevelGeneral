@@ -1,5 +1,12 @@
 import random
 
+# chatbot, class which contains some functions and holds information in attributes
+    # initialize our class object
+    # main function
+    # 
+
+
+
 name = input("what is your name?:")
 print("hello" + name)
 
