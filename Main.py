@@ -1,5 +1,8 @@
 import random
 import time
+import sortSearch
+
+print(sortSearch.Sort.bubble())
 # chatbot, class which contains some functions and holds information in attributes
 class Chatbot():
     # initialize our class object
