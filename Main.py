@@ -3,6 +3,7 @@ import time
 import sortSearch
 
 print(sortSearch.Sort.bubble([5,4,7,10,2]))
+print(sortSearch.Sort.bogo([5,4,7,10,2]))
 # chatbot, class which contains some functions and holds information in attributes
 class Chatbot():
     # initialize our class object
@@ -22,8 +23,39 @@ class Chatbot():
     # main function
     def chat(self):
         self.intro()
+
     # function to ask question
+    def askMeAnything():
+        while True:
+            print("ask me anything!")
+            question = input(":").lower()
+            if "capital" in question:
+                if "france" in question:
+                    print("F")
+                elif "spain" in question:
+                    print("S")
+                else:
+                    print("I don't know that capital.")
+            elif "cia" in question:
+                print("I'm not at liberty to say...")
+                print("How about I ask you some questions now?")
+                break
+            else:
+                print("I don't understand.")
+    
     # function to find out information
+    def findInfo(self):
+        questionBank = ["how are you?:", 
+                    "are you wealthy?:",
+                    "what is your location?:"
+                    "what is your occupation?:"
+                    "Am I your friend?:"
+                    "Am I your soulmate?:"
+                    "What did you eat earlier?"]
+        while True:
+            name = input("what is your name?:")
+            print("hello" + name)
+            ans = input(random.choice(questionBank))
     # function for slow print character by character from chatbot
     def slowPrint(self, toPrint):
         for character in toPrint:
@@ -41,32 +73,7 @@ bob = Chatbot # creating an instance of the class 'Chatbot'
 alice = Chatbot # creating a second instance of the class 'Chatbot'
 
 
-name = input("what is your name?:")
-print("hello" + name)
 
-while True:
-    print("ask me anything!")
-    question = input(":").lower()
-    if "capital" in question:
-        if "france" in question:
-            print("F")
-        elif "spain" in question:
-            print("S")
-        else:
-            print("I don't know that capital.")
-    elif "cia" in question:
-        print("I'm not at liberty to say...")
-        print("How about I ask you some questions now?")
-        break
-    else:
-        print("I don't understand.")
 
-questionBank = ["how are you?:", 
-                "are you wealthy?:",
-                "what is your location?:"
-                "what is your occupation?:"
-                "Am I your friend?:"
-                "Am I your soulmate?:"
-                "What did you eat earlier?"]
-while True:
-    ans = input(random.choice(questionBank))
+
+
